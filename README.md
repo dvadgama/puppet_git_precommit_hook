@@ -12,4 +12,5 @@ $rake install_precommit_hook
 To Do
 ========
 1) Refactor Tests
+
 2) Add check for style with puppet-lint
