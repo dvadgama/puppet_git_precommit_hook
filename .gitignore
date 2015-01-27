@@ -1,0 +1,5 @@
+.kateproject
+.kateproject.d/*
+.project
+*.swp
+*.kate-swp

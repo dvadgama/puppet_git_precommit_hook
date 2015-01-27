@@ -1,0 +1,5 @@
+require 'hooks/require/system'
+require 'hooks/require/git'
+require 'hooks/require/checks'
+require 'hooks/require/helper'
+require 'hooks/helper/test'

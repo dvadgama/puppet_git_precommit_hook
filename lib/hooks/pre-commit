@@ -1,0 +1,20 @@
+#!/usr/bin/env ruby
+
+lib = "#{File.expand_path(File.dirname(__FILE__))}/require"
+$:.unshift lib
+Dir[ lib + '/*.rb' ].each { | file | require File.basename(file) } 
+
+precommit = GitHooks::Helper::Precommit.new
+
+status = precommit.run
+
+case status
+when :nothingnew
+  puts "no new manifest or templates"
+  exit
+when :true
+  puts "You're A Star,no syntax error(s) found"
+  exit
+when :false
+  abort "You're A E-Star, error(s) found"
+end
