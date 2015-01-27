@@ -13,3 +13,7 @@ $rake install_precommit_hook
 1) Refactor Tests
 
 2) Add check for style with puppet-lint
+
+3) update rake :install_precommit_hook  to take path of another repository as a arg
+
+e.g. $rake :install_precommit_hook /for/this/puppet/module/
