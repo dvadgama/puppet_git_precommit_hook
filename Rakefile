@@ -12,8 +12,8 @@ end
 desc "Install precommit hook"
 task :install_precommit_hook do
  curr_dir = File.dirname(__FILE__)
- sh "cp -r #{curr_dir}/hooks/lib/hooks/* #{curr_dir}/.git/hooks 2&>1 > /dev/null"
- sh "rm -f #{curr_dir}/.git/hooks/helper/test.rb 2&>1 > /dev/null"
+ sh "cp -r #{curr_dir}/lib/hooks/* #{curr_dir}/.git/hooks/"
+ sh "rm -f #{curr_dir}/.git/hooks/helper/test.rb "
  puts "Installed Precommit hook for puppet"
 end
 
