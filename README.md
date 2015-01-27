@@ -21,6 +21,6 @@ e.g. $rake :install_precommit_hook /for/this/puppet/module/
 
 #Note
 
-This project is not to replace the easier shell/bash script availabe for such checks but, solely to improve on the ruby skills and, gets hands on BDD.
+This project is not to replace the easier shell/bash script availabe for such checks but, solely to improve on the ruby skills and, get hands on with BDD,Cucumber 7 RSpec.
 
-I will try to update this project as frequent as possible with better ruby codes and, better coding practices 
+I will try to update this project as frequent as possible with better Tests , ruby codes
