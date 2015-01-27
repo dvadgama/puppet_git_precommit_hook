@@ -17,3 +17,10 @@ $rake install_precommit_hook
 3) update rake :install_precommit_hook  to take path of another repository as a arg
 
 e.g. $rake :install_precommit_hook /for/this/puppet/module/
+
+
+#Note
+
+This project is not to replace the easier shell/bash script availabe for such checks but, solely to improve on the ruby skills and, gets hands on BDD.
+
+I will try to update this project as frequent as possible with better ruby codes and, better coding practices 
