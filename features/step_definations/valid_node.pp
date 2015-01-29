@@ -1,10 +1,10 @@
 node 'cookbook' {
 
   file {'/tmp/hello':
-          content => "Hello, dude \n",
-       }
+    content => "Hello, dude \n",
+  }
 
-   include puppet
+  include puppet
 }
 
 node 'cookbook-test' {

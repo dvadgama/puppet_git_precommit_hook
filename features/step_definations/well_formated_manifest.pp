@@ -1,7 +1,7 @@
 node 'cookbook' {
 
-  file {'/tmp/hello':
-    content => "Hello, dude \n"
+file {'/tmp/hello':
+        content => "Hello, dude \n",
   }
 
   include puppet

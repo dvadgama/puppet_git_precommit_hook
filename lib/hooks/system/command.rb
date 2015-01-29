@@ -1,21 +1,24 @@
-require 'open3'
+require 'open4'
 
 module GitHooks
   module System
     class Command
       
       def initialize
-	@shell = Open3
 	@status,@output = ''
       end
       
-      def execute(command)
+      def execute(*command)
 	
 	begin
-	  @shell.popen3(command) do | stdin,stdout,stderr,wait_thread |
-	    @status = wait_thread.value.to_i
-	    @output = @status==0 ? format_output(stdout) : format_output(stderr)
-	  end
+	  #in case i switch to open4
+	  pid,stdin,stdout,stderr = Open4.popen4(*command)
+	  ignore,status = Process::waitpid2 pid
+	  @status = status.exitstatus.to_i
+	  
+	  out = format_output(stdout)
+	  err = format_output(stderr)
+	  @output = out | err
 	
 	rescue Errno::ENOENT
 	  return {:status => [127], :msg => ["command not found"]}
