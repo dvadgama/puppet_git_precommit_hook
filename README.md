@@ -3,13 +3,13 @@ Precommit Git hook for puppet syntax check written in ruby
 
 Rake Default task is there to Install Gems & Run Tests
 
-```bash
+```
 $rake
 ```
 
 To install pre-commit hook, execute 
 
-```bash
+```
 $rake install_precommit_hook
 ````
 
@@ -18,10 +18,11 @@ $rake install_precommit_hook
 
 ~~2) Add check for style with puppet-lint .~~
 
-3) update rake :install_precommit_hook  to take path of another repository as a arg
+~~3) update rake :install_precommit_hook  to take path of another repository as a arg.~~
 
-e.g. $rake :install_precommit_hook /for/this/puppet/module/
+e.g. $rake install_precommit_hoo_to[/this/puppet/module/]
 
+      /this/puppet/module/ must be the root git directory 
 
 #Note
 
