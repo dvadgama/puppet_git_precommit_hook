@@ -20,7 +20,7 @@ $rake install_precommit_hook
 
 ~~3) update rake :install_precommit_hook  to take path of another repository as a arg.~~
 
-e.g. $rake install_precommit_hoo_to[/this/puppet/module/]
+e.g. $rake install_precommit_hook_to[/this/puppet/module/]
 
       /this/puppet/module/ must be the root git directory 
 
