@@ -2,4 +2,5 @@
 .kateproject.d/*
 .project
 *.swp
+Gemfile.lock
 *.kate-swp
